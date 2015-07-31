@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Positioning</title>
+	<style>
+	#parentDiv{
+		width: 960px;
+		margin: 0 auto;
+		border: solid 1px #000;
+	}
+
+	.relativeDiv{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		position: relative;
+		top: 100px;
+		left: 50px;
+	}
+
+	.absoluteDiv{
+		width: 150px;
+		height: 150px;
+		background-color: blue;
+		position: absolute;
+		top: 200px;
+		left: 150px;
+		z-index: -1;
+
+	}
+
+	.absoluteDiv2{
+		width: 200px;
+		height: 200px;
+		background: orange;
+		border-radius: 100px;
+		position: absolute;
+		right: 0px;
+		bottom: 0px;
+	}
+
+	#facebookbar{
+		background: rgb(56,100,163);
+		width: 100%;
+		height: 60px;
+		position: fixed;
+		z-index: -1;
+		top: 0px;
+		left: 0px;
+	}
+
+	</style>
+</head>
+<body>
+<DIV id="parentDiv"></DIV>
+<div id="facebookbar"></div>
+	<div class="relativeDiv"></div>
+	<div class="absoluteDiv"></div>
+	<div class="absoluteDiv2"></div>
+	
+
+</body>
+</html>
